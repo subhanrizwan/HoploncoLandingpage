@@ -1,29 +1,37 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@mui/material"
 
 export default function CurvedFooter() {
   return (
-    <footer className="relative mt-20">
-      {/* Curved top background */}
-      <div className="absolute inset-x-0 top-0 h-20 bg-lime-400 rounded-t-[100px]"></div>
+    <footer className="relative overflow-hidden bg-black">
+      <div
+        className="bg-lime-400 relative overflow-hidden"
+        style={{
+          borderRadius: "50% 50% 0 0 / 200px 200px 0 0",
+          minHeight: "400px",
+          transform: "scaleX(1.2)",
+        }}
+      >
+        {/* Main footer content */}
+        <div className="flex items-center justify-center pt-24 pb-16 px-8" style={{ transform: "scaleX(0.83)" }}>
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Company name */}
+            <h2 className="text-2xl font-bold text-black mb-4">hoplon & co.</h2>
 
-      {/* Main footer content */}
-      <div className="bg-lime-400 pt-20 pb-8 px-8 mx-4 rounded-l-3xl rounded-r-3xl">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Company name */}
-          <h2 className="text-2xl font-bold text-black mb-4">hoplon & co.</h2>
+            {/* Description text */}
+            <p className="text-black text-sm leading-relaxed mb-8 max-w-3xl mx-auto">
+             All third-party company names, brand names, trademarks, and logos featured on this website are the property of their respective owners. Hoplon & Co. does not claim any ownership or association with these third-party assets and has no control over the content or materials they represent. Any resemblance to content found elsewhere on the internet is purely coincidental.
+            </p>
+            <p className="text-black text-sm leading-relaxed mb-8 max-w-3xl mx-auto">
 
-          {/* Description text */}
-          <p className="text-black text-sm leading-relaxed mb-8 max-w-3xl mx-auto">
-            Hoplon & Co. is a creative agency specializing in brand identity, digital experiences, and strategic
-            communications. We work with forward-thinking companies to create meaningful connections between brands and
-            their audiences through innovative design solutions and compelling storytelling. Our team combines strategic
-            thinking with creative excellence to deliver results that drive business growth and cultural impact.
-          </p>
+All logos, trademarks, designs, layouts, content, service marks, photos, and related materials mentioned or displayed on this website and in any associated proposals are the property of their respective copyright holders. These items are used solely for reference, demonstration, or to reflect the collective experience of our team, collaborators, contractors, or affiliates.
+Hoplon & Co. is an independent entity and is not affiliated with any third-party brands unless explicitly stated.
+            </p>
 
-          {/* Call to action button */}
-          <Button className="bg-black text-lime-400 hover:bg-gray-800 px-8 py-3 rounded-full font-medium">
-            Let's work on the right project
-          </Button>
+            {/* Call to action button */}
+            <Button className="!bg-black !w-full !text-white px-8 !py-3 !rounded-2xl !font-sm">
+              © 2025 Hoplon & Co. All rights reserved.
+            </Button>
+          </div>
         </div>
       </div>
     </footer>
