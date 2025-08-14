@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection.jsx"
 import HeroSection1 from "./components/HeroSection1.jsx"
 // import HeroSection2 from "./components/HeroSection2.jsx"
 import AboutSection from "./components/AboutSection.jsx"
+import CurvedFooter from "./components/Footer.jsx"
 import SkillsSection from "./components/SkillsSection.jsx"
 import PortfolioSection from "./components/PortfolioSection.jsx"
 import EducationSection from "./components/EducationSection.jsx"
@@ -24,6 +25,7 @@ function App() {
       {/* <EducationSection /> */}
       {/* <CurvedSection /> */}
       {/* <ContactSection /> */}
+      <CurvedFooter />
     </div>
   )
 }
