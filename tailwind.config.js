@@ -34,13 +34,14 @@ export default {
     float: 'float 4s ease-in-out infinite',
   },
 
-      // colors:{
-      //   primary:'rgba(3, 4, 6, 1)',
-      //   secondary:'#03ada4',
-      //   cardbg:'#f6f6f6',
-      //   textFooter:'#000',
-      //   Fieldbg:'#F5F5F5'
-      // }
+      colors:{
+        gradiant:'linear-gradient(180deg, #D8FF36, #829920)',
+        primary:'rgba(3, 4, 6, 1)',
+        secondary:'#d8ff36',
+        cardbg:'#f6f6f6',
+        textFooter:'#000',
+        Fieldbg:'#F5F5F5'
+      }
     },
   },
   plugins: [],
