@@ -16,18 +16,19 @@ export default function BtsSection() {
 
       {/* Content Container */}
         <div className="relative z-10 w-full">
-        <div className="text-center mb-0 bg-yellow-100 py-12 px-8 rounded-lg">
+        <div className="text-center mb-0 bg-gradient-to-b from-white to-[#F6FFD2] py-12 px-8 rounded-lg">
           <p className="text-sm text-gray-600 mb-2">Client Studies</p>
           <h2 className="text-4xl font-bold text-black mb-4">Behind The Scenes</h2>
           <p className="text-xl text-black">Our Projects</p>
         </div>
 
-          <div className="flex justify-center items-center min-h-[400px] relative -mb-20 z-20">
+          <div className="flex justify-center items-center min-h-[400px] relative -mb-20 z-20
+          bg-gradient-to-b from-[#F6FFD2] to-white">
             <div className="relative w-full">
               <img
                 src={ImageBanner}
                 alt="Portfolio Showcase"
-                className="w-full h-auto object-cover drop-shadow-2xl"
+                className="w-full h-80 md:h-auto object-cover drop-shadow-2xl"
               />
             </div>
           </div>
