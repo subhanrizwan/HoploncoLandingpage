@@ -113,7 +113,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
-
+body{
+  overflow-x: hiddenc;
+}
 @keyframes scroll-left {
   0% {
     transform: translateX(0);

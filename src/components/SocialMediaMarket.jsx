@@ -1,4 +1,5 @@
-import { DesktopAccessDisabled } from "@mui/icons-material"
+import { DesktopAccessDisabled } from "@mui/icons-material";
+import { TiDeviceDesktop } from "react-icons/ti";
 
 export default function SocialMediaMarket() {
   return (
@@ -6,7 +7,7 @@ export default function SocialMediaMarket() {
       {/* Content */}
       <div
         className="relative pt-32 pb-10 md:pb-20  bg-black"
-         style={{
+        style={{
           borderRadius: "50% 50% 0 0 / 200px 200px 0 0",
           transform: "scaleX(1.2)",
         }}
@@ -30,9 +31,12 @@ export default function SocialMediaMarket() {
           </div>
 
           {/* Cards Row - Made responsive: single column on mobile, 2 columns on tablet, 4 columns on desktop */}
-          <div className="flex justify-content-center flex-wrap gap-6 max-w-4xl md:max-w-5xl mx-auto">
+          <div className="flex justify-center flex-wrap gap-6 max-w-4xl md:max-w-5xl mx-auto">
             {[...Array(9)].map((_, index) => (
-              <div key={index} className="relative w-full max-w-xs mx-auto">
+              <div
+                key={index}
+                className="relative w-full max-w-xs mx-auto group cursor-pointer"
+              >
                 <div
                   style={{
                     position: "relative",
@@ -40,10 +44,10 @@ export default function SocialMediaMarket() {
                     height: 250,
                     margin: "0 auto",
                     transform: "translateY(0px)",
-                    transition: "transform 1000ms",
+                    transition: "transform 800ms ease-out",
                   }}
                 >
-                  {/* Card Background SVG - Adjusted viewBox proportionally for smaller size */}
+                  {/* Card Background SVG */}
                   <svg
                     width="100%"
                     height="100%"
@@ -53,18 +57,30 @@ export default function SocialMediaMarket() {
                   >
                     <defs>
                       <filter id="dropShadow">
-                        <feDropShadow dx={0} dy={4} stdDeviation={4} floodColor="black" floodOpacity="0.15" />
+                        <feDropShadow
+                          dx={0}
+                          dy={4}
+                          stdDeviation={4}
+                          floodColor="black"
+                          floodOpacity="0.15"
+                        />
                       </filter>
                     </defs>
                     <path
                       d="M284 0C305.539 0 323 17.461 323 39V206C323 227.539 305.539 245 284 245H42C20.461 245 3 227.539 3 206V79C3 70.716 9.716 64 18 64H54C62.284 64 70 56.284 70 48V16C70 7.716 76.716 1 85 1H284Z"
                       fill="white"
                       filter="url(#dropShadow)"
-                      style={{ opacity: 1, transition: "opacity 1000ms" }}
+                      className="group-hover:opacity-0 transition-opacity duration-700 ease-out"
+                    />
+                    <path
+                      d="M42 3C20.461 3 3 20.461 3 42V206C3 227.539 20.461 245 42 245H284C305.539 245 323 227.539 323 206V42C323 20.461 305.539 3 284 3H42Z"
+                      fill="white"
+                      filter="url(#dropShadow)"
+                      className="opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out"
                     />
                   </svg>
 
-                  {/* Icon Container - Adjusted positioning for smaller card */}
+                  {/* Icon Container */}
                   <div
                     style={{
                       position: "relative",
@@ -73,24 +89,23 @@ export default function SocialMediaMarket() {
                       width: 48,
                       height: 48,
                       zIndex: 2,
-                      color: "rgb(59, 130, 246)",
-                      transform: "translateY(0px)",
-                      transition: "color 1000ms, transform 1000ms",
                     }}
                   >
+                    <div className="absolute h-12 w-12 bg-transparent rounded-full top-0 flex items-center justify-center opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-75 transition-all duration-700 ease-out">
+                      <TiDeviceDesktop className="text-gray-200 text-3xl transition-colors duration-700" />
+                    </div>
+
                     <div
-                      className="absolute block h-12 w-12 bg-transparent rounded-full top-0 flex items-center justify-center"
+                      className="absolute p-4 bg-secondary rounded-full -top-5 -left-5 opacity-0 scale-50 -translate-x-2 -translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-5 group-hover:translate-y-7 "
                       style={{
-                        opacity: 1,
-                        transform: "translateX(0px) translateY(0px)",
-                        transition: "opacity 1000ms, transform 1000ms",
+                        transition: "all 0.69s ease-out",
                       }}
                     >
-                      <DesktopAccessDisabled className="!text-gray-100 !text-3xl" />
+                      <TiDeviceDesktop className="text-black text-lg transition-colors duration-100" />
                     </div>
                   </div>
 
-                  {/* Card Title - Adjusted positioning and width for smaller card */}
+                  {/* Card Title */}
                   <div
                     style={{
                       position: "relative",
@@ -99,24 +114,26 @@ export default function SocialMediaMarket() {
                       height: 48,
                       top: -8,
                       left: 70,
-                      transform: "translateX(0px)",
-                      transition: "transform 1000ms",
                     }}
                   >
-                    <h3 className="font-bold text-[16px] text-gray-800 leading-tight">Web development</h3>
+                    <h3 className="font-bold text-[16px] text-gray-800 leading-tight">
+                      Web development
+                    </h3>
                   </div>
 
-                  {/* Card Description - Adjusted padding for smaller card */}
+                  {/* Card Description */}
                   <div
                     style={{
                       position: "relative",
                       zIndex: 1,
                       padding: "0.8rem 1.5rem 1.5rem 3rem",
-                      transform: "translateX(0px)",
-                      transition: "transform 1000ms",
                     }}
                   >
-                    <p className="text-gray-600 text-xs leading-relaxed">At Enum Digital, we confidently deliver the stunning website design & development service in a very discounted price. Our Best and Affordable Web Design</p>
+                    <p className="text-gray-600 text-xs leading-relaxed">
+                      At Enum Digital, we confidently deliver the stunning
+                      website design & development service in a very discounted
+                      price. Our Best and Affordable Web Design
+                    </p>
                   </div>
                 </div>
               </div>
@@ -125,5 +142,5 @@ export default function SocialMediaMarket() {
         </div>
       </div>
     </section>
-  )
+  );
 }

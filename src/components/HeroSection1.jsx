@@ -17,7 +17,6 @@ export default function HeroSection() {
   }
   return (
      <section
-     
       id="home"
       className="md:min-h-screen h-[400px] lg:h-[180vh] bg-black relative overflow z-50"
     >
