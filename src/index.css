@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* body{
+      font-family: Epilogue, Epilogue Fallback;
+    font-style: normal;
+} */
 
 
 :root {
@@ -140,4 +144,25 @@ body{
 
 .animate-scroll-right {
   animation: scroll-right 10s linear infinite;
+}
+
+.curve-straight {
+  position: relative;
+  height: 320px;
+  background: linear-gradient(180deg, #8750f7, #b392ff);
+  overflow: hidden;
+}
+
+/* Top me gol curve */
+.curve-straight::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;                      /* bilkul top se */
+  transform: translateX(-50%);
+  width: 120%;
+  height: 120px;               /* curve ki height */
+  background: #fff;            /* niche wale page ka background color */
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
 }

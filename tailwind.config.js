@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        epilogue: ["Epilogue", "sans-serif"],
+      },
       keyframes: {
         //For Hero Section
           float: {
@@ -31,7 +34,7 @@ export default {
   animation: {
     moveLeft: 'moveLeft 3s linear infinite',
     moveRight: 'moveRight 3s linear infinite',
-    float: 'float 4s ease-in-out infinite',
+    float: 'float 10s ease-in-out infinite',
   },
 
       colors:{

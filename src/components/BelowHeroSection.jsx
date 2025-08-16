@@ -1,6 +1,7 @@
 import { Button } from "@mui/material"; 
 import HeadingCurve from '../assets/images/herosection/HOPLON & CO.png'
 import Logo from '../assets/images//herobelow/logo-20.png';
+import Shad from '../assets/images/curveShadow/shadow.svg'
 export default function BelowHeroSection() {
   const topRowLogos = [
     { name: "LifeBuoy", logo: "/lifebuoy-logo.png" },
@@ -22,23 +23,21 @@ export default function BelowHeroSection() {
   ];
 
   return (
-    <section className="relative bg-black border-none overflow-hidden mt-0 mb-0 pb-0 "
- 
- >
-   
+    
+    <>
+     <div class="h-52 lg:h-60 relative w-full aspect-[16/9] bg-black">
+      <img src={Shad} alt="" class="absolute md:-top-96 mt-16 w-full h-auto z-0 pointer-events-none" style={{
+        objectFit:'cover',
+      }}/>
+      </div>
+    <section className="relative bg-gray-100 border-none overflow-hidden mt-0 mb-0 pb-0 ">
       {/* Content */}
+     
       <div
-        className="relative pt-24 md:pt-24 lg:pt-32 pb-12 border-none md:pb-16 lg:pb-10 px-4 bg-white"
-        style={{
-          borderRadius: "50% 50% 0 0 / 100px 100px 0 0",
-          transform: "scaleX(1.1)",
-            // background: "linear-gradient(180deg, #D8FF36 5%, #FFFFFF 95%)"
-        }}
-        
+        className=" relative pt-24 pb-12 border-none px-4 bg-white"
+       
       >
-        <div className="absolute -top-12 " style={{mixBlendMode:'overlay'}} >
-        <img src={HeadingCurve} alt="" srcset="" className="text-secondary" />
-        </div>
+     
         <div className="container mx-auto text-center max-w-5xl p-6">
           {/* Header */}
           <div className="mb-16 ">
@@ -151,5 +150,6 @@ export default function BelowHeroSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }

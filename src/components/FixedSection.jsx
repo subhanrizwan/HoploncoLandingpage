@@ -33,7 +33,6 @@ function FixedSection() {
     />
   </a> */}
         <a
-          href="https://wa.me/971505452643"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
@@ -49,7 +48,7 @@ function FixedSection() {
               height: "110px",
               width: "110px",
               top: "8%",
-              left: "20.5%", // yahan value kam ki
+              left: "20.3%", // yahan value kam ki
               transform: "translate(-20%, -30%)",
               objectFit: "cover",
             }}
@@ -57,7 +56,6 @@ function FixedSection() {
         </a>
 
         <a
-          href="tel:${phoneNumber}"
           aria-label="Contact"
           className="   relative   w-[56px] h-[56px]   rounded-bl-[18px]    overflow-hidden   bg-[#989898]   grid place-items-center   ring-1 ring-white/35   "
         >
@@ -67,6 +65,7 @@ function FixedSection() {
             width={34}
             height={34}
             decoding="async"
+            className="w-10 h-10"
             data-nimg={1}
             style={{ color: "transparent", objectFit: "cover" }}
             src={Phone}
