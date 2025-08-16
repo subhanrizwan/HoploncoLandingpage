@@ -13,10 +13,12 @@ import PartnerShip from "./components/Partnership.jsx"
 import SocialMediaMarket from "./components/SocialMediaMarket.jsx"
 import Technologies from "./components/Technologies.jsx"
 import BelowHeroSection from "./components/BelowHeroSection.jsx"
+// import FixButton from "./FixButton.jsx"
 function App() {
   return (
       <div className="bg-transparent text-white min-h-screen">
         <FixedSection />
+        {/* <FixButton /> */}
       <Navigation />
       <HeroSection1 />
       <BelowHeroSection />
