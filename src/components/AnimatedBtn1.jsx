@@ -9,7 +9,7 @@ export default function FirstAnimatedButton({ children="Talk To Our Expert", onC
     <button
       className={`
         relative overflow-hidden
-        px-8 py-4 
+        px-8 py-4 md:px-10 md:text-sm
         text-white font-semibold text-lg
         rounded-full
         transition-all duration-1000 ease-in-out

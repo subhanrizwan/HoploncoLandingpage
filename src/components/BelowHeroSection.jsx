@@ -25,8 +25,8 @@ export default function BelowHeroSection() {
   return (
     
     <>
-     <div class="h-52 lg:h-60 relative w-full aspect-[16/9] bg-black">
-      <img src={Shad} alt="" class="absolute md:-top-96 mt-16 w-full h-auto z-0 pointer-events-none" style={{
+     <div class="h-40 md:h-36 lg:h-60 xl:h-80 sm:mb-0 mb-0 relative w-full aspect-[16/9] bg-black">
+      <img src={Shad} alt="" class="absolute md:-top-40 top-10 w-full h-auto z-0 pointer-events-none" style={{
         objectFit:'cover',
       }}/>
       </div>
@@ -34,7 +34,7 @@ export default function BelowHeroSection() {
       {/* Content */}
      
       <div
-        className=" relative pt-24 pb-12 border-none px-4 bg-white"
+        className=" relative sm:pt-0 pt-20 pb-12 border-none px-4 bg-white"
        
       >
      
@@ -51,7 +51,7 @@ export default function BelowHeroSection() {
               with Our Esteemed Client
             </h1>
 
-            <p className="text-black text-sm max-w-2xl mx-auto leading-relaxed">
+            <p className="text-black hidden text-sm max-w-2xl mx-auto leading-relaxed">
               We are proud to partner with a valued client whose trust and
               collaboration drive us to deliver excellence. Their vision and
               commitment inspire us to continuously improve and provide

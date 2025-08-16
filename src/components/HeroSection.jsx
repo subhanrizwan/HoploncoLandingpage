@@ -8,23 +8,23 @@ import Roads from '../assets/images/herosection/roads.png';
 // import Like from '../assets/images/social-media-icons/Like.png';
 function HeroSection() {
   return (
-<section className="relative bg-black text-white md:min-h-screen lg:h-[1000px] h-96 items-center justify-center overflow">
-  <div className="relative z-10 flex flex-col md:flex-row justify-between w-full max-w-8xl lg:pt-48 pt-16 gap-2">
+<section className="relative bg-black text-white sm:h-[600px] md:h-[850px] lg:h-[1000px] h-72 items-center justify-center overflow">
+  <div className="relative z-10 flex flex-col md:flex-row justify-between w-full max-w-8xl sm:pt-36 lg:pt-48 pt-10 gap-2">
     <div className="absolute z-0 top-1/5 text-center w-full">
-      <h1 className="text-4xl md:text-7xl/[80px] lg:text-9xl/[110px] font-bold font-epilogue scale-[0.95]">
+      <h1 className="text-4xl sm:text-5xl md:!text-[3.8rem]/[80px] lg:!text-[5.5rem]/[110px] xl:!text-[8rem]/[110px] font-bold font-epilogue scale-[0.95] md:-mt-4 ">
         Best Website<span className="text-secondary"> Design</span>
         <br />
         <span className="text-secondary">&amp; Development</span> <br />
         Agency in Dubai, UAE
       </h1>
     </div>
-    <div className="absolute max-w-md text-left leading-tight w-full lg:top-[47%] lg:left-40 lg:text-md hidden md:block">
-      <p>
+    <div className="absolute md:!top-[42%] md:!left-8 sm:top-[43%] lg:!top-[45%] lg:!left-0 xl:!left-40 sm:text-xs lg:text-md max-w-md text-left leading-tight w-full hidden md:block">
+      <p className='md:px-12'>
         Looking for Award Winning Website Designs and Web Development Company in
         Dubai?
       </p>
     </div>
-    <div className="relative z-50 animate-float will-change-transform flex flex-col items-center justify-center mx-auto md:mt-10 lg:mt-[-12.5rem] mt-[-6rem]">
+    <div className="relative z-50 animate-float will-change-transform flex flex-col items-center justify-center mx-auto mt-[-4.5rem] sm:mt-[-10.5rem] md:!mt-[-12rem] lg:!mt-[-14.5rem]">
       <div className="relative w-[100%] md:w-[100%] mx-auto ">
         <img
           alt="VR Statue"
@@ -50,8 +50,8 @@ function HeroSection() {
         />
       </div>
     </div>
-    <div className="absolute max-w-[400px] text-right leading-tight lg:right-36 lg:top-[47%] w-full text-sm hidden md:block">
-      <p>
+    <div className="absolute max-w-[400px] text-right leading-tight sm:top-[42%] sm:right-0 md:!right-6 md:!top-[42%] lg:!right-0 lg:!top-[45%] xl:!right-40 xl:text-sm w-full text-sm hidden md:block">
+      <p className='sm:px-16'>
         Dubai’s 1st Digital Experiential based Website Design &amp; Development
         Company. No more B2B or B2C, we focus on H2H. Our Highly
         skilled&nbsp;Website designers&nbsp;and&nbsp;Web Developers in Dubai,
