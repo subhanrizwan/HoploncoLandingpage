@@ -104,7 +104,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative bg-black text-white md:min-h-screen h-[500px] lg:h-[180vh] overflow-hidden"
+      className="relative bg-black text-white md:min-h-screen h-[500px] lg:h-[180vh] overflow"
     >
       {/* Floating Social Icons */}
       <div className="absolute hidden inset-0 z-50">
@@ -173,7 +173,7 @@ export default function HeroSection() {
         </div>
       </div>
       {/* Center Responsive Images */}
-      <div className="relative bottom-[35%] z-50 animate-float will-change-transform flex flex-col items-center justify-center mx-auto ">
+      <div className="relative bottom-[35%] overflow z-50 animate-float will-change-transform flex flex-col items-center justify-center mx-auto ">
         <div className="relative w-[95%] md:w-[85%] lg:w-[75%] mx-auto">
           <img
             alt="VR Statue"

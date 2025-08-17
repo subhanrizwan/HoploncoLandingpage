@@ -14,6 +14,7 @@ import SocialMediaMarket from "./components/SocialMediaMarket.jsx"
 import Technologies from "./components/Technologies.jsx"
 import BelowHeroSection from "./components/BelowHeroSection.jsx"
 import HeroSection from "./components/HeroSection.jsx"
+import DemoHeroSection from './components/DemoHeroSection.jsx'
 // import FixButton from "./FixButton.jsx"
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         {/* <FixButton /> */}
       <Navigation />
       <HeroSection />
+      {/* <DemoHeroSection /> */}
       {/* <HeroSection1 /> */}
       <BelowHeroSection />
       <SocialMediaMarket />
