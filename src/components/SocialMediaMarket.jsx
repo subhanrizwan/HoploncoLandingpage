@@ -1,9 +1,8 @@
-import { DesktopAccessDisabled } from "@mui/icons-material";
 import { TiDeviceDesktop } from "react-icons/ti";
 
 export default function SocialMediaMarket() {
   return (
-    <section className="relative bg-balack text-white overflow-hidden mt-0">
+    <section className="relative bg-white text-white overflow-hidden mt-0">
       {/* Content */}
       <div
         className="relative pt-32 pb-10 md:pb-20  bg-black"
@@ -14,7 +13,7 @@ export default function SocialMediaMarket() {
       >
         <div className="container mx-auto text-center p-6 md:p-10">
           {/* Header */}
-          <div className="mb-16">
+          <div className="header bg-gray-400">
             <button className="border-2 border-dashed border-secondary text-secondary px-4 py-3 rounded-full text-sm mb-8 hover:border-gray-400 transition-colors">
               We provide quality services
             </button>

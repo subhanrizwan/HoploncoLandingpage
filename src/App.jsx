@@ -15,7 +15,11 @@ import Technologies from "./components/Technologies.jsx"
 import BelowHeroSection from "./components/BelowHeroSection.jsx"
 import HeroSection from "./components/HeroSection.jsx"
 import DemoHeroSection from './components/DemoHeroSection.jsx'
+import IndustriesOriginal from "./components/IndustriesOriginal.jsx"
+import MapOriginal from "./components/MapOriginal.jsx"
 // import FixButton from "./FixButton.jsx"
+import FooterOriginal from "./components/FooterOriginal.jsx"
+import OtherServicesOriginal from "./OtherServicesOriginal.jsx"
 function App() {
   return (
       <div className="bg-transparent text-white min-h-screen">
@@ -30,12 +34,16 @@ function App() {
       <Technologies />
       <PartnerShip />
       <EngageSell />
-      <OtherServices />
-      <IndustriesSection />
+      {/* <OtherServices /> */}
+      <OtherServicesOriginal />
+      {/* <IndustriesSection /> */}
+      <IndustriesOriginal />
       <BtsSection />
       <CurvedSection />
-      <MapSection />
-      <CurvedFooter />
+      {/* <MapSection /> */}
+      {/* <CurvedFooter /> */}
+      <MapOriginal />
+      <FooterOriginal />
     </div>
   )
 }

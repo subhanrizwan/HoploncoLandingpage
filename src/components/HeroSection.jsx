@@ -11,7 +11,7 @@ function HeroSection() {
     <section className="relative bg-black text-white sm:h-[600px] md:h-[850px] lg:h-[1000px] h-[16rem] items-center justify-center overflow">
       <div className="relative z-10 flex flex-col md:flex-row justify-between w-full max-w-8xl sm:pt-36 lg:pt-48 pt-8 gap-2">
         <div className="absolute z-0 top-1/5 text-center w-full ">
-          <h1 className="text-4xl sm:text-5xl md:!text-[4rem]/[80px] lg:!text-[7rem]/[110px] xl:!text-[7.6rem]/[120px] font-bold font-epilogue scale-[0.95] md:-mt-4 ">
+          <h1 className="text-4xl sm:text-5xl md:!text-[4rem]/[80px] lg:!text-[7rem]/[110px] xl:!text-[7rem]/[120px] font-bold font-epilogue scale-[0.95] md:-mt-4 ">
             Best Website<span className="text-secondary"> Design</span>
             <br />
             <span className="text-secondary">&amp; Development</span> <br />
@@ -68,7 +68,7 @@ function HeroSection() {
               decoding="async"
               data-nimg={1}
               className="mx-auto lg:-mt-[28%] -mt-[34%]"
-              style={{ color: "transparent" }}
+              style={{ color: 'transparent' }}
               src={Roads}
             />
           </div>

@@ -29,45 +29,45 @@ const IndustriesSection = () => {
 
   return (
     <section className="bg-gradient-to-b from-gray-200/100 via-white to-white py-16 px-6 md:px-10 shadow-inner"
->      <style jsx>{`
-        @keyframes scrollUp {
-          0% {
-            transform: translateY(0);
+  >      <style jsx>{`
+          @keyframes scrollUp {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-50%);
+            }
           }
-          100% {
-            transform: translateY(-50%);
+
+          @keyframes scrollDown {
+            0% {
+              transform: translateY(-50%);
+            }
+            100% {
+              transform: translateY(0);
+            }
           }
-        }
 
-        @keyframes scrollDown {
-          0% {
-            transform: translateY(-50%);
+          .scroll-up {
+            animation: scrollUp 15s linear infinite;
           }
-          100% {
-            transform: translateY(0);
+
+          .scroll-down {
+            animation: scrollDown 15s linear infinite;
           }
-        }
 
-        .scroll-up {
-          animation: scrollUp 15s linear infinite;
-        }
+          .column-container {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+          }
 
-        .scroll-down {
-          animation: scrollDown 15s linear infinite;
-        }
-
-        .column-container {
-          height: 400px;
-          overflow: hidden;
-          position: relative;
-        }
-
-        .scroll-content {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-        }
-      `}</style>
+          .scroll-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+        `}</style>
 
       <div className="max-w-7xl mx-auto">
         {/* Header Badge - moved to left alignment */}
@@ -103,6 +103,7 @@ const IndustriesSection = () => {
               />
             </div>
           </div>
+          
 
           <div className="px-0 md:px-4">
             <div className="grid grid-cols-4 gap-0 md:gap-4">

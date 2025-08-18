@@ -137,13 +137,36 @@ body{
     transform: translateX(0);
   }
 }
+/* left scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 .animate-scroll-left {
-  animation: scroll-left 10s linear infinite;
+  display: flex;
+  width: max-content; /* jitna content hoga utna width */
+  animation: scroll-left 12s linear infinite; /* speed adjust karo */
+}
+
+/* right scroll */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .animate-scroll-right {
-  animation: scroll-right 10s linear infinite;
+  display: flex;
+  width: max-content;
+  animation: scroll-right 12s linear infinite;
 }
 
 .curve-straight {

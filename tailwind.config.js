@@ -39,7 +39,7 @@ export default {
 
       colors:{
         gradiant:'linear-gradient(180deg, #D8FF36, #829920)',
-        primary:'rgba(3, 4, 6, 1)',
+        // primary:'rgba(3, 4, 6, 1)',
         secondary:'#d8ff36',
         cardbg:'#f6f6f6',
         textFooter:'#000',
