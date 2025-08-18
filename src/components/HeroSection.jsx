@@ -1,4 +1,4 @@
-import Monster from "../assets/images/herosection/monster.png";
+import Monster from "../assets/images/herosection/statue.png";
 import Roads from "../assets/images/herosection/roads.png";
 
 // import Instagram from '../assets/images/social-media-icons/instagram.png';
@@ -9,7 +9,7 @@ import Roads from "../assets/images/herosection/roads.png";
 // import Like from '../assets/images/social-media-icons/Like.png';
 function HeroSection() {
   return (
-    <section className="relative bg-black text-white sm:h-[600px] md:h-[850px] lg:h-[1200px] h-[30rem] items-center justify-center ">
+    <section className="relative bg-black text-white sm:h-[700px] md:h-[1050px] lg:h-[1200px] h-[26rem] mb-28 sm:mb-0 items-center justify-center ">
       <div className="relative z-10 flex flex-col md:flex-row justify-between w-full max-w-8xl sm:pt-36 lg:pt-48 pt-8 gap-2">
         <div className="absolute z-0 top-1/5 text-center w-full ">
           <h1 className="text-4xl sm:text-5xl md:!text-[4rem]/[80px] lg:!text-[7rem]/[110px] xl:!text-[7rem]/[120px] font-bold font-epilogue scale-[0.95] md:-mt-4 ">

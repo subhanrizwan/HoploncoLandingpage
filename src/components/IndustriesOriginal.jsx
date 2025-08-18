@@ -6,8 +6,8 @@ import IndustryScroller from './ScrollerIndustry';
 function IndustriesOriginal() {
   return (
     <section className="bg-transparent flex flex-col justify-center px-6 mt-0 max-w-7xl mx-auto overflow-hidden">
-      <div className="my-5 flex flex-col md:flex-col  max-w-[1400px]">
-        <div>
+      <div className="my-5 flex flex-wrap md:flex-wrap xl:flex-nowrap max-w-[1400px]">
+        <div className='mb-6'>
           <div className="my-4">
             <span className="bg-secondary text-black text-[14px] border-1 p-3 px-8 border-dashed rounded-full border-primary">
               Industries We Serve

@@ -1,7 +1,8 @@
 import Bg from '../assets/images/engage/bg.png'
 import Overlay from '../assets/images/engage/overlay.png'
 import { Button } from "@mui/material"
-
+import ThirdAnimatedButton from './AnimatedBtn3';
+import SecondAnimatedButton from './AnimatedBtn2';
 export default function OtherServices() {
   return (
     <section className="relative bg-secondary overflow-hidden mt-0 ">
@@ -26,7 +27,7 @@ export default function OtherServices() {
               Made Reality
             </h1>
 
-            <p className="text-black text-lg max-w-2xl mx-auto leading-relaxed p-6 pt-0">
+            <p className="text-[#3F3F3F] text-lg max-w-2xl mx-auto leading-relaxed p-6 pt-0">
               We provide bespoke solutions that bridge the gap between commercial possibilities and creative resolution,
               while delivering effectiveness for our clients.
             </p>
@@ -123,46 +124,8 @@ export default function OtherServices() {
             
             </div>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3 lg:p-8 lg:pt-12 p-6 pt-8 sm:space-x-4 w-full sm:w-auto">
-  <Button
-    variant="contained"
-    sx={{
-      backgroundColor: "#000",
-      color: "#fff",
-      borderRadius: "25px",
-      padding: "12px 24px",
-      textTransform: "none",
-      fontSize: "14px",
-      fontWeight: 500,
-      width: "100%", // full width on mobile
-      maxWidth: "200px", // limit size
-      "&:hover": {
-        backgroundColor: "#333",
-      },
-    }}
-  >
-    Talk To Our Expert
-  </Button>
-
-  <Button
-    variant="outlined"
-    sx={{
-      borderColor: "#000",
-      color: "#000",
-      borderRadius: "25px",
-      padding: "12px 24px",
-      textTransform: "none",
-      fontSize: "14px",
-      fontWeight: 500,
-      width: "100%", // full width on mobile
-      maxWidth: "200px",
-      "&:hover": {
-        borderColor: "#333",
-        backgroundColor: "rgba(0,0,0,0.04)",
-      },
-    }}
-  >
-    Get a Quote
-  </Button>
+<ThirdAnimatedButton />
+<SecondAnimatedButton />
 </div>
 
          

@@ -1,65 +1,82 @@
-import Monster from '../assets/images/herosection/monster.png';
-import Roads from '../assets/images/herosection/roads.png';
+import Monster from '../assets/images/herosection/statue.png';
+import Roads from '../assets/images/herosection/city.png';
 function DemoHeroSection() {
   return (
-    <section className="relative bg-black text-white min-h-screen overflow flex items-center justify-center">
-      {/* Background Image Container - Centered with slight bottom overflow */}
-      <div className="absolute inset-0 flex items-center justify-center z-50">
-        <div className="relative animate-float will-change-transform">
-          <img
-            alt="VR Statue"
-            loading="lazy"
-            width={912}
-            height={802}
-            decoding="async"
-            className="w-auto h-[70vh] sm:h-[75vh] md:h-[80vh] lg:h-[85vh] xl:h-[90vh] object-contain"
-            style={{ color: "transparent" }}
-            src={Monster}
-          />
-          <img
-            alt="Dubai City"
-            loading="lazy"
-            width={1150}
-            height={664}
-            decoding="async"
-            className="absolute top-[65%] sm:top-[68%] md:top-[70%] lg:top-[72%] left-1/2 transform -translate-x-1/2 w-auto h-[45vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh] xl:h-[65vh] object-contain"
-            style={{ color: "transparent" }}
-            src={Roads}
-          />
-        </div>
-      </div>
+    <section className="relative bg-black text-white md:min-h-screen  items-center justify-center overflow">
+      <div className="relative z-10 flex flex-col md:flex-row justify-between w-full max-w-8xl sm:pt-36 lg:pt-48 pt-8 gap-2">
+    <div className="absolute z-0 top-1/5 text-center w-full ">
+          <h1 className="text-4xl sm:text-5xl md:!text-[4rem]/[80px] lg:!text-[7rem]/[110px] xl:!text-[7rem]/[120px] font-bold font-epilogue scale-[0.95] md:-mt-4 ">
+            Best Website<span className="text-secondary"> Design</span>
+            <br />
+            <span className="text-secondary">&amp; Development</span> <br />
+            Agency in Dubai, UAE
+          </h1>
+          {/* Sub-headings Container - Flex with justify-between */}
+          <div className="hidden md:block">
+            <div className="flex flex-col md:px-10 lg:px-0 sm:flex-row justify-between items-center gap-0 sm:gap-8 md:gap-12 max-w-6xl xl:max-w-6xl 2xl:max-w-[1600px] mx-auto">
+              {/* Left-aligned sub-heading */}
+              <div className="flex-1 text-left">
+                <p className="text-lg leading-relaxed max-w-md">
+                  Looking for Award Winning Website Designs and Web Development
+                  Company in Dubai?
+                </p>
+              </div>
 
-      {/* Content Container - Always centered */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Main Heading - Always centered */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-9xl font-bold font-sans leading-tight mb-8 sm:mb-12 md:mb-16">
-          Best Website<span className="text-secondary"> Design</span>
-          <br />
-          <span className="text-secondary">&amp; Development</span>
-          <br />
-          Agency in Dubai, UAE
-        </h1>
-
-        {/* Sub-headings Container - Flex with justify-between */}
-        <div className="flex flex-col sm:flex-row justify-between items-start gap-6 sm:gap-8 md:gap-12 max-w-6xl mx-auto">
-          {/* Left-aligned sub-heading */}
-          <div className="flex-1 text-left">
-            <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-md">
-              Looking for Award Winning Website Designs and Web Development Company in Dubai?
-            </p>
-          </div>
-
-          {/* Right-aligned sub-heading */}
-          <div className="flex-1 text-right">
-            <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-md ml-auto">
-              Dubai's 1st Digital Experiential based Website Design &amp; Development Company. No more B2B or B2C, we
-              focus on H2H. Our Highly skilled Website designers and Web Developers in Dubai, UAE will help you grow
-              Traffic, Leads, &amp; Sales.
-            </p>
+              {/* Right-aligned sub-heading */}
+              <div className="flex-1 text-right">
+                <p className="text-lg leading-relaxed max-w-md ml-auto">
+                  Dubai's 1st Digital Experiential based Website Design &amp;
+                  Development Company. No more B2B or B2C, we focus on H2H. Our
+                  Highly skilled Website designers and Web Developers in Dubai,
+                  UAE will help you grow Traffic, Leads, &amp; Sales.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+   
+    <div className="relative z-50 animate-float will-change-transform flex flex-col items-center justify-center mx-auto -mt-16 md:-mt-40">
+      <div className="relative w-[90%] md:w-[100%] mx-auto ">
+        <img
+          alt="VR Statue"
+          className="mx-auto"
+          data-nimg="1"
+          decoding="async"
+          height="802"
+          loading="lazy"
+          src={Monster}
+          style={{
+            color: "transparent",
+          }}
+          width="912"
+        />
+        <img
+          alt="Dubai City"
+          className="mx-auto -mt-[34%]"
+          data-nimg="1"
+          decoding="async"
+          height="664"
+          loading="lazy"
+          src={Roads}
+          style={{
+            color: "transparent",
+          }}
+          width="910"
+        />
       </div>
-    </section>
+    </div>
+
+    {/* <div className="absolute z-0 top-1/5 text-center w-full -mt-0 block md:hidden">
+      <h1 className="text-4xl md:text-7xl/[80px] lg:text-9xl/[111px] font-bold scale-[0.95]">
+        Best Website
+        <span className="text-primary"> Design</span>
+        <br />
+        <span className="text-primary">& Development</span> <br />
+        Agency in Dubai, UAE
+      </h1>
+    </div> */}
+  </div>
+</section>
   )
 }
 

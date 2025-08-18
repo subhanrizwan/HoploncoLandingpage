@@ -1,6 +1,6 @@
 import Logo from '../assets/images/logo/logo.png'
 import Shad from "../assets/images/Footer/HOPLON & CO.svg";
-
+import Union from '../assets/images/SpiderWeb/Union.png'
 function FooterOriginal() {
   return (
     <>
@@ -12,6 +12,7 @@ function FooterOriginal() {
           backgroundColor: "#000",
         }}
       >
+        
         <svg
           width="100%"
           style={{ height: "clamp(80px, 1vw, 120px)" }}
@@ -30,12 +31,13 @@ function FooterOriginal() {
           <ellipse cx={960} cy={120} rx={1000} ry={120} fill="url(#_S_4_)" />
         </svg>
         <div style={{ position: "relative", zIndex: 1 }}>
-          <img
+          {/* <img
             src={Shad}
             alt=""
             className="absolute bottom-[7rem] w-full h-auto z-0 pointer-events-none opacity-5"
             style={{ objectFit: "cover" }}
-          />
+          /> */}
+           
           <section className="bg-[#D8FF36] flex flex-col text-black items-center justify-center px-6">
             <img
               alt="logo"

@@ -2,9 +2,9 @@ import React from 'react'
 import { Button } from "@mui/material";
 import HeadingCurve from "../assets/images/herosection/HOPLON & CO.png";
 import Shad from "../assets/images/curveShadow/shadow.svg";
-import ThirdAnimatedButton from './AnimatedBtn3';
-import SecondAnimatedButton from './AnimatedBtn2';
+import FirstAnimatedButton from './AnimatedBtn1';
 import Logo from "../assets/images//herobelow/logo-20.png";
+import SecondAnimatedButton from './AnimatedBtn2';
 
 function HeroBelowOriginal() {
      const topRowLogos = [
@@ -27,8 +27,8 @@ function HeroBelowOriginal() {
   ];
   return (
     <>
-    <div className="max-w-[2080px] mx-auto -mt-60">
-  <div className="h-44 md:h-60 relative w-full aspect-[16/9]">
+    <div className="max-w-[2080px] mx-auto -mt-36 md:-mt-80">
+  <div className="h-52 md:h-96 lg:h-[450px] relative w-full aspect-[16/9]">
     <img
       alt=""
       className="absolute md:-top-100 w-full h-auto z-0 pointer-events-none"
@@ -38,8 +38,8 @@ function HeroBelowOriginal() {
       }}
     />
   </div>
-  <div className="relative z-10 md:mt-20 mt-0">
-    <section className="bg-white flex flex-col items-center justify-center px-6 md:px-10 my-0 md:my-6 pt-10">
+  <div className="relative z-10 mt-0">
+    <section className="bg-white flex flex-col items-center justify-center px-6 my-6">
       <div className="my-4 lg:pt-8">
         <span className="text-[#989898] md:text-[14px] text-[10px] border-[1.2px] p-3 m-4 px-md-8 border-dashed rounded-full">
           Trusted by Industry & Leaders Worldwide
@@ -55,7 +55,7 @@ function HeroBelowOriginal() {
         solutions.
       </h2>
           {/* Logo Scrollers */}
-                  <div className="max-w-8xl mx-auto mb-0 p-12 px-0 pb-0">
+                  <div className="max-w-8xl mx-auto mb-16 p-12 px-0 pb-0">
                     <div className="w-full overflow-hidden mb-8">
                       <div className="flex animate-scroll-left whitespace-nowrap gap-3">
                         {[...topRowLogos, ...topRowLogos].map(
@@ -94,7 +94,7 @@ function HeroBelowOriginal() {
                     </div>
                   </div>
         <div className="hidden md:flex space-x-2 text-black font-medium my-10">
-          <ThirdAnimatedButton />
+          <FirstAnimatedButton />
           <SecondAnimatedButton />
          
         </div>

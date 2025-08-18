@@ -63,7 +63,7 @@ function OtherServicesOriginal() {
                     position: "relative",
                     width: 360,
                     height: 320,
-                    margin: "2rem 2rem -2rem",
+                    margin: "2rem auto",
                   }}
                 >
                   {/* Background shapes */}
@@ -180,7 +180,7 @@ function OtherServicesOriginal() {
                     position: "relative",
                     width: 360,
                     height: 320,
-                    margin: "2rem 2rem -2rem",
+                    margin: "2rem auto",
                   }}
                 >
                   {/* Background shapes */}
@@ -297,7 +297,7 @@ function OtherServicesOriginal() {
                     position: "relative",
                     width: 360,
                     height: 320,
-                    margin: "2rem 2rem -2rem",
+                    margin: "2rem auto",
                   }}
                 >
                   {/* Background shapes */}
@@ -414,7 +414,7 @@ function OtherServicesOriginal() {
                     position: "relative",
                     width: 360,
                     height: 320,
-                    margin: "2rem 2rem -2rem",
+                    margin: "2rem auto",
                   }}
                 >
                   {/* Background shapes */}

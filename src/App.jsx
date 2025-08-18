@@ -23,13 +23,13 @@ import SpederWeb from "./components/SpederWeb.jsx"
 import TechnologiesOriginal from "./components/TechnologiesOriginal.jsx"
 import HeroBelowOriginal from "./components/HeroBelowOriginal.jsx"
 import SecondHeroSection from "./components/SecondHeroSection.jsx"
+import DemoHeroSection from "./components/DemoHeroSection.jsx"
 function App() {
   return (
       <div className="bg-transparent text-white min-h-screen">
         <FixedSection />
       <Navigation />
-      <HeroSection />
-      {/* <SecondHeroSection /> */}
+      <DemoHeroSection />
       <HeroBelowOriginal   />
       <SocialMediaMarketOriginal />
       <TechnologiesOriginal />

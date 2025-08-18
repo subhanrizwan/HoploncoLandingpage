@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import Union from '../assets/images/SpiderWeb/Union.png'
-
+import ThirdAnimatedButton from './AnimatedBtn3';
+import SecondAnimatedButton from './AnimatedBtn2';
 export default function PartnerShip() {
   return (
     <>
@@ -31,14 +32,10 @@ export default function PartnerShip() {
   {/*  */}
   <div style={{ position: "relative", zIndex: 1 }}>
     <section
-   //  style={{
-//           backgroundImage: `url(${Union})`,
-//            backgroundSize: "contain",
-//         backgroundPosition: "center",
-//     }}
+
     className="bg-[#D8FF36] pb-10 flex flex-col items-center justify-center px-6">
       <div className="my-4">
-        <span className="bg-white text-[#989898] md:text-[14px] text-[11px] border-1 p-3 m-4 px-2 border-dashed rounded-full border-primary">
+        <span className="bg-white text-[#989898] md:text-[14px] text-[11px] border-1 p-3 m-4 md:px-4 px-2 border-dashed rounded-full border-primary">
           Trusted by Industry &amp; Leaders Worldwide
         </span>
       </div>
@@ -46,7 +43,7 @@ export default function PartnerShip() {
         Grateful for the Partnership <br />
         with Our Esteemed Client
       </h1>
-      <h2 className="text-[#3F3F3F] text-center max-w-[1100px] font-[300] text-[20px]">
+      <h2 className="text-[#3F3F3F] text-center max-w-[1100px] font-[300] text-[20px] mb-10">
         Enum Digital ( Digits that Define Growth ) - No matter we are building a
         website for our clients or boosting their business through our marketing
         strategies - We talk about facts like the&nbsp;website's health score,
@@ -99,9 +96,9 @@ export default function PartnerShip() {
                       "Develop your marketing persona",
                     ].map((item, index) => (
                       <div key={index} className="flex items-start gap-3">
-                        <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-black rounded-full flex items-center justify-center mt-0.5">
+                        <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-transparent text-black rounded-full flex items-center justify-center mt-0.5">
                           <svg
-                            className="w-3 h-3 sm:w-4 sm:h-4 text-lime-400"
+                            className="w-3 h-3 sm:w-4 sm:h-4 text-black"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -156,14 +153,14 @@ export default function PartnerShip() {
                     key={index}
                     className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-black rounded-full flex flex-col items-center justify-center text-center"
                   >
-                    
+                  
                     <div className="text-lime-400 font-bold text-lg sm:text-xl lg:text-2xl leading-none">
                       {badge.title}
                     </div>
                     <div className="text-white text-xs sm:text-sm font-medium leading-none mt-1">
                       {badge.subtitle}
                     </div>
-                    <div className="text-white/80 text-[8px] sm:text-[10px] leading-tight mt-1 px-1">
+                    <div className="text-white/50 text-[8px] sm:text-[10px] leading-tight mt-1 px-1">
                       {badge.description}
                     </div>
                   </div>
@@ -171,46 +168,8 @@ export default function PartnerShip() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:space-x-4 w-full sm:w-auto">
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: "#000",
-                    color: "#fff",
-                    borderRadius: "25px",
-                    padding: "12px 24px",
-                    textTransform: "none",
-                    fontSize: "14px",
-                    fontWeight: 500,
-                    width: "100%", // full width on mobile
-                    maxWidth: "200px", // limit size
-                    "&:hover": {
-                      backgroundColor: "#333",
-                    },
-                  }}
-                >
-                  Talk To Our Expert
-                </Button>
-
-                <Button
-                  variant="outlined"
-                  sx={{
-                    borderColor: "#000",
-                    color: "#000",
-                    borderRadius: "25px",
-                    padding: "12px 24px",
-                    textTransform: "none",
-                    fontSize: "14px",
-                    fontWeight: 500,
-                    width: "100%", // full width on mobile
-                    maxWidth: "200px",
-                    "&:hover": {
-                      borderColor: "#333",
-                      backgroundColor: "rgba(0,0,0,0.04)",
-                    },
-                  }}
-                >
-                  Get a Quote
-                </Button>
+              <ThirdAnimatedButton />
+              <SecondAnimatedButton />
               </div>
             </div>
       

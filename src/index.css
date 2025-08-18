@@ -119,9 +119,10 @@
 }
 body,html{
   overflow-x: hidden;
-  /* max-width: 100%; */
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400!important; /* Normal weight by default */
+  }
 
-}
 @keyframes scroll-left {
   0% {
     transform: translateX(0);

@@ -6,7 +6,7 @@ import SecondAnimatedButton from './AnimatedBtn2';
 export default function Navigation({ children = "Click Me" }) {
   return (
     <>
- <header className="w-full z-50 bg-black border-none">
+ <header className="w-full bg-black border-none">
   <div className="max-w-8xl mx-auto px-4 md:px-16 py-5 flex items-center justify-center md:justify-between">
     <a href="/">
       <img
