@@ -29,7 +29,7 @@ export default function FirstAnimatedButton({ children="Talk To Our Expert", onC
           ${isHovered ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"}
         `}
         style={{
-           border:'2px solid #d8ff36',
+           border:'1.5px solid #d8ff36',
           clipPath: "polygon(0 0, 100% 0, 100% 51%, 0 51%)",
         }}
       >
@@ -50,7 +50,7 @@ export default function FirstAnimatedButton({ children="Talk To Our Expert", onC
           ${isHovered ? "translate-y-full opacity-0" : "translate-y-0 opacity-100"}
         `}
         style={{
-           border:'2px solid #d8ff36',
+           border:'1.5px solid #d8ff36',
           clipPath: "polygon(0 49%, 100% 49%, 100% 100%, 0 100%)",
         }}
       >

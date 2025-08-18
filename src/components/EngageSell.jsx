@@ -16,7 +16,7 @@ export default function OtherServices() {
         <div className="container mx-auto text-center max-w-5xl">
           {/* Header */}
          <div className="mb-16">
-            <button className="border-2 border-dashed border-gray-600 text-black px-4 py-2 rounded-full text-sm mb-8 hover:border-gray-400 transition-colors">
+            <button className="border-[1.2px] border-dashed border-gray-600 text-black px-4 py-2 rounded-full text-sm mb-8 hover:border-gray-400 transition-colors">
               Other Services
             </button>
 
@@ -36,10 +36,10 @@ export default function OtherServices() {
           <div className="relative max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-start lg:items-center">
               {/* Left Column */}
-              <div className="space-y-6 md:space-y-8 order-2 lg:order-1 p-6">
+              <div className="space-y-6 md:space-y-8 order-2 lg:order-1 p-6 ">
                 {/* Generate Traffic Card */}
                 <div className="bg-[#F8FAF2] backdrop-blur-sm rounded-2xl p-4 md:p-6 text-left">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-full flex items-center justify-center mb-3 md:mb-4">
                     <svg className="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2L2 7v10c0 5.55 3.84 10 9 11 1.09-.21 2.09-.64 3-1.1 .91.46 1.91.89 3 1.1 5.16-1 9-5.45 9-11V7l-10-5z" />
                     </svg>
@@ -54,7 +54,7 @@ export default function OtherServices() {
 
                 {/* Build Loyalty Card */}
                 <div className="bg-[#F8FAF2] backdrop-blur-sm rounded-2xl p-4 md:p-6 text-left">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-full flex items-center justify-center mb-3 md:mb-4">
                     <svg className="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                     </svg>
@@ -94,7 +94,7 @@ export default function OtherServices() {
               <div className="space-y-6 md:space-y-8 order-3 p-6">
                 {/* More Conversions Card */}
                 <div className="bg-[#F8FAF2] backdrop-blur-sm rounded-2xl p-4 md:p-6 text-left ">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-full flex items-center justify-center mb-3 md:mb-4">
                     <svg className="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
                     </svg>
@@ -108,7 +108,7 @@ export default function OtherServices() {
 
                 {/* Delight & Engage Card */}
                 <div className="bg-[#F8FAF2] backdrop-blur-sm rounded-2xl p-4 md:p-6 text-left">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-lime-400 rounded-full flex items-center justify-center mb-3 md:mb-4">
                     <svg className="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>

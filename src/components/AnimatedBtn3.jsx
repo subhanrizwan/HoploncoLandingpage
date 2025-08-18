@@ -2,14 +2,14 @@
 import { Button } from "@mui/material"
 import { useState } from "react"
 
-export default function SecondAnimatedButton({ children="Get a Quote", onClick, className = "" }) {
+export default function ThirdAnimatedButton({ children="Talk To Our Expert", onClick, className = "" }) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
     <button
       className={`
         relative overflow-hidden
-        px-8 py-4 md:px-10 md:text-sm 
+        px-8 py-4 md:px-10 md:text-sm
         text-white font-semibold text-lg
         rounded-full
         transition-all duration-1000 ease-in-out
@@ -24,19 +24,16 @@ export default function SecondAnimatedButton({ children="Get a Quote", onClick, 
 
       <div
         className={`
-          absolute inset-0 bg-white rounded-full
+          absolute inset-0 bg-black rounded-full
           transition-all duration-[1.3s] ease-in-out
           ${isHovered ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"}
         `}
         style={{
-           border:'1px solid #fff',
           clipPath: "polygon(0 0, 100% 0, 100% 51%, 0 51%)",
-                      border:'1.5px solid #000'
-
         }}
       >
         <span
-          className="absolute inset-0 flex items-center justify-center text-black"
+          className="absolute inset-0 flex items-center justify-center text-white"
           style={{
             clipPath: "polygon(0 0, 100% 0, 100% 51%, 0 51%)",
           }}
@@ -47,19 +44,16 @@ export default function SecondAnimatedButton({ children="Get a Quote", onClick, 
 
       <div
         className={`
-          absolute inset-0 bg-white rounded-full
+          absolute inset-0 bg-black rounded-full
           transition-all duration-[1.3s] ease-in-out
           ${isHovered ? "translate-y-full opacity-0" : "translate-y-0 opacity-100"}
         `}
         style={{
-           border:'1px solid #fff',
           clipPath: "polygon(0 49%, 100% 49%, 100% 100%, 0 100%)",
-                      border:'1.5px solid #000'
-
         }}
       >
         <span
-          className="absolute inset-0 flex items-center justify-center text-black"
+          className="absolute inset-0 flex items-center justify-center text-white"
           style={{
             clipPath: "polygon(0 49%, 100% 49%, 100% 100%, 0 100%)",
           }}

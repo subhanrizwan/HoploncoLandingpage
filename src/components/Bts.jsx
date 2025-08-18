@@ -17,7 +17,12 @@ export default function BtsSection() {
       {/* Content Container */}
         <div className="relative z-10 w-full">
         <div className="text-center mb-0 bg-gradient-to-b from-white to-[#F6FFD2] py-12 px-8 rounded-lg">
-          <p className="text-sm text-gray-600 mb-2">Client Studies</p>
+           <div className="my-4">
+        <span className="text-black text-[14px] border-[1.2px] p-3 m-4 px-8 border-dashed rounded-full border-gray-300">
+          View Our Locations
+        </span>
+      </div>
+          {/* <p className="text-sm text-gray-600 mb-2 border-[1.2px] border-dashed border-gray-200 rounded-full">Client Studies</p> */}
           <h2 className="text-4xl font-bold text-black mb-4">Behind The Scenes</h2>
           <p className="text-xl text-black">Our Projects</p>
         </div>

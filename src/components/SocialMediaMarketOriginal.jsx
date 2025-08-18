@@ -1,61 +1,43 @@
+import React from "react";
 import { Share, Palette, PhoneAndroid, TrendingUp } from "@mui/icons-material";
-import ThirdAnimatedButton from './components/AnimatedBtn3';
-import SecondAnimatedButton from './components/AnimatedBtn2';
-function OtherServicesOriginal() {
+import FirstAnimatedButton from './AnimatedBtn1';
+import SecondAnimatedButton from './AnimatedBtn2'
+function SocialMediaMarketOriginal() {
   return (
     <>
-      <div
-        className="bg-transparent"
-        style={{
-          position: "relative",
-          overflow: "hidden",
-          // background: "#D8FF36",
-        }}
-      >
-        <svg
-          width="100%"
-          style={{ height: "clamp(80px, 1vw, 120px)" }}
-          className="block "
-          viewBox="0 0 1920 120"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <defs>
-            <linearGradient id="_R_clfdb_" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#000" />
-              <stop offset="100%" stopColor="#666" />
-            </linearGradient>
-          </defs>
-          <ellipse
-            cx={960}
-            cy={120}
-            rx={1000}
-            ry={120}
-            fill="url(#_R_clfdb_)"
-          />
-        </svg>
-        <div style={{ position: "relative", zIndex: 1 }}>
-          <section
-            className="bg-gray-200 flex flex-col items-center justify-center px-6"
-            style={{ background: "linear-gradient(180deg, #333, #fff)" }}
+      <div className="relative mt-0">
+        <div className="relative z-10">
+          <svg
+            width="100%"
+            style={{ height: "clamp(80px, 1vw, 120px)" }}
+            className="block "
+            viewBox="0 0 1920 120"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            aria-hidden="true"
           >
+            <defs>
+              <linearGradient id="_S_1_" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#000" />
+                <stop offset="100%" stopColor="#000" />
+              </linearGradient>
+            </defs>
+            <ellipse cx={960} cy={120} rx={1000} ry={120} fill="url(#_S_1_)" />
+          </svg>
+          <section className="bg-black flex flex-col items-center justify-center px-6 ">
             <div className="my-4">
-              <span className="text-secondary text-[14px] border-[1.5px] p-3 m-4 px-8 border-dashed rounded-full border-secondary">
-                Other Services
+              <span className="text-[#989898] text-[14px] border-[1.5px] p-3 m-4 px-8 border-dashed rounded-full border-secondary">
+                We provide quality services
               </span>
             </div>
-            <h1 className="text-white font-[700] text-4xl md:text-7xl max-w-[800px] text-center leading-tight my-6">
-              Your Dream Website, <br />
-              Made Reality
+            <h1 className="text-white font-[700] text-4xl md:text-7xl max-w-[1100px] text-center leading-tight my-6">
+              Our&nbsp;Website development Service Deliverables
             </h1>
-            <h2 className="text-white text-center max-w-[800px] font-[300] text-[20px]">
-              We provide bespoke solutions that bridge the gap between
-              commercial possibilities and creative resolution, while delivering
-              effectiveness for our clients.
+            <h2 className="text-[#979595] text-center max-w-[800px] font-[300] text-[20px]">
+              We deliver effective, efficient &amp; innovative digital services.
             </h2>
-            <div className="my-0">
-              <div className="flex gap-2 justify-center flex-wrap text-black">
+            <div className="my-5">
+              <div className="flex gap-2 flex-wrap justify-center text-black">
                 {/* UX/UI Design */}
                 <div
                   className="group cursor-pointer bg-gr"
@@ -173,7 +155,7 @@ function OtherServicesOriginal() {
                     </p>
                   </div>
                 </div>
-                  {/* UX/UI Design */}
+                {/* UX/UI Design */}
                 <div
                   className="group cursor-pointer bg-gr"
                   style={{
@@ -290,7 +272,7 @@ function OtherServicesOriginal() {
                     </p>
                   </div>
                 </div>
-                  {/* UX/UI Design */}
+                {/* UX/UI Design */}
                 <div
                   className="group cursor-pointer bg-gr"
                   style={{
@@ -407,7 +389,7 @@ function OtherServicesOriginal() {
                     </p>
                   </div>
                 </div>
-                  {/* UX/UI Design */}
+                {/* UX/UI Design */}
                 <div
                   className="group cursor-pointer bg-gr"
                   style={{
@@ -527,10 +509,9 @@ function OtherServicesOriginal() {
               </div>
             </div>
             <div className="hidden md:flex space-x-2 text-black font-medium my-10">
-              <ThirdAnimatedButton />
-              <SecondAnimatedButton />
+             <FirstAnimatedButton />
+             <SecondAnimatedButton />
             </div>
-            <div className="my-10" />
           </section>
         </div>
       </div>
@@ -538,4 +519,4 @@ function OtherServicesOriginal() {
   );
 }
 
-export default OtherServicesOriginal;
+export default SocialMediaMarketOriginal;

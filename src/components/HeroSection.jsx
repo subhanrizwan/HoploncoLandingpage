@@ -1,5 +1,6 @@
 import Monster from "../assets/images/herosection/monster.png";
 import Roads from "../assets/images/herosection/roads.png";
+
 // import Instagram from '../assets/images/social-media-icons/instagram.png';
 // import Fb from '../assets/images/social-media-icons/fb.png';
 // import Tiktok from '../assets/images/social-media-icons/tiktok.png';
@@ -8,7 +9,7 @@ import Roads from "../assets/images/herosection/roads.png";
 // import Like from '../assets/images/social-media-icons/Like.png';
 function HeroSection() {
   return (
-    <section className="relative bg-black text-white sm:h-[600px] md:h-[850px] lg:h-[1000px] h-[16rem] items-center justify-center overflow">
+    <section className="relative bg-black text-white sm:h-[600px] md:h-[850px] lg:h-[1200px] h-[30rem] items-center justify-center ">
       <div className="relative z-10 flex flex-col md:flex-row justify-between w-full max-w-8xl sm:pt-36 lg:pt-48 pt-8 gap-2">
         <div className="absolute z-0 top-1/5 text-center w-full ">
           <h1 className="text-4xl sm:text-5xl md:!text-[4rem]/[80px] lg:!text-[7rem]/[110px] xl:!text-[7rem]/[120px] font-bold font-epilogue scale-[0.95] md:-mt-4 ">
@@ -73,24 +74,11 @@ function HeroSection() {
             />
           </div>
         </div>
-        {/* <div className="absolute max-w-[400px] text-right leading-tight sm:top-[42%] sm:right-0 md:!right-6 md:!top-[42%] lg:!right-0 lg:!top-[45%] xl:!right-40 xl:text-sm w-full text-sm hidden md:block">
-      <p className='sm:px-16'>
-        Dubai’s 1st Digital Experiential based Website Design &amp; Development
-        Company. No more B2B or B2C, we focus on H2H. Our Highly
-        skilled&nbsp;Website designers&nbsp;and&nbsp;Web Developers in Dubai,
-        UAE&nbsp;will help you grow Traffic, Leads, &amp; Sales.
-      </p>
-    </div> */}
-        {/* <div className="absolute z-0 -top-28 text-center w-full  block md:hidden">
-      <h1 className="text-4xl md:text-7xl/[80px] lg:text-9xl/[111px] font-bold scale-[0.95]">
-        Best Website<span className="text-secondary"> Design</span>
-        <br />
-        <span className="text-secondary">&amp; Development</span> <br />
-        Agency in Dubai, UAE
-      </h1>
-    </div> */}
+     
       </div>
+     
     </section>
+    
   );
 }
 

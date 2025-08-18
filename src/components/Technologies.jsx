@@ -1,17 +1,10 @@
-import { Button } from "@mui/material"
+import { Button } from "@mui/material";
 
 export default function Technologies() {
   return (
     <section className="relative bg-black overflow-hidden ">
       {/* Main Curved Background */}
-
-      <div
-        className="relative  bg-gradient-to-b from-[#F6FFD2] to-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20"
-        style={{
-          borderRadius: "50% 50% 0 0 / 200px 200px 0 0",
-          transform: "scaleX(1.2)",
-        }}
-      >
+      <div className="relative  bg-gradient-to-b from-[#F6FFD2] to-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto max-w-6xl pt-12 p-6">
           {/* Header Badge */}
           <div className="text-center mb-6 sm:mb-8">
@@ -36,11 +29,20 @@ export default function Technologies() {
             <div className="bg-transparent rounded-2xl  p-6 sm:p-8 lg:p-12 ">
               {/* Technology Tabs */}
               <div className="flex flex-wrap justify-center gap-2 sm:gap-4 lg:gap-6 mb-8 sm:mb-12">
-                {["Mobile", "Front End", "Database", "Backend", "CMS", "Infra And Devops"].map((tech, index) => (
+                {[
+                  "Mobile",
+                  "Front End",
+                  "Database",
+                  "Backend",
+                  "CMS",
+                  "Infra And Devops",
+                ].map((tech, index) => (
                   <div
                     key={index}
                     className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-full transition-colors cursor-pointer ${
-                      index === 1 ? "bg-gray-800 text-white" : "text-gray-600 hover:text-gray-800"
+                      index === 1
+                        ? "bg-gray-800 text-white"
+                        : "text-gray-600 hover:text-gray-800"
                     }`}
                   >
                     {tech}
@@ -60,48 +62,48 @@ export default function Technologies() {
               </div>
 
               {/* Action Buttons */}
-               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:space-x-4 w-full sm:w-auto">
-  <Button
-    variant="contained"
-    sx={{
-      backgroundColor: "#000",
-      color: "#fff",
-      borderRadius: "25px",
-      padding: "12px 24px",
-      textTransform: "none",
-      fontSize: "14px",
-      fontWeight: 500,
-      width: "100%", // full width on mobile
-      maxWidth: "200px", // limit size
-      "&:hover": {
-        backgroundColor: "#333",
-      },
-    }}
-  >
-    Talk To Our Expert
-  </Button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:space-x-4 w-full sm:w-auto">
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "#000",
+                    color: "#fff",
+                    borderRadius: "25px",
+                    padding: "12px 24px",
+                    textTransform: "none",
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    width: "100%", // full width on mobile
+                    maxWidth: "200px", // limit size
+                    "&:hover": {
+                      backgroundColor: "#333",
+                    },
+                  }}
+                >
+                  Talk To Our Expert
+                </Button>
 
-  <Button
-    variant="outlined"
-    sx={{
-      borderColor: "#000",
-      color: "#000",
-      borderRadius: "25px",
-      padding: "12px 24px",
-      textTransform: "none",
-      fontSize: "14px",
-      fontWeight: 500,
-      width: "100%", // full width on mobile
-      maxWidth: "200px",
-      "&:hover": {
-        borderColor: "#333",
-        backgroundColor: "rgba(0,0,0,0.04)",
-      },
-    }}
-  >
-    Get a Quote
-  </Button>
-</div>
+                <Button
+                  variant="outlined"
+                  sx={{
+                    borderColor: "#000",
+                    color: "#000",
+                    borderRadius: "25px",
+                    padding: "12px 24px",
+                    textTransform: "none",
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    width: "100%", // full width on mobile
+                    maxWidth: "200px",
+                    "&:hover": {
+                      borderColor: "#333",
+                      backgroundColor: "rgba(0,0,0,0.04)",
+                    },
+                  }}
+                >
+                  Get a Quote
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -116,5 +118,5 @@ export default function Technologies() {
         }}
       ></div> */}
     </section>
-  )
+  );
 }

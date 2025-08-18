@@ -25,20 +25,22 @@ function MapOriginal() {
     <ellipse cx={960} cy={120} rx={1000} ry={120} fill="url(#_S_3_)" />
   </svg>
   <div style={{ position: "relative", zIndex: 1 }}>
-    <section className="bg-black flex flex-col items-center items-center justify-center px-6 ">
+    <section className="bg-black flex flex-col items-center justify-center px-6">
       <div className="my-4">
-        <span className="text-secondary text-[14px] border-[1.5px] p-3 m-4 px-8 border-dashed rounded-full border-secondary">
+        <span className="text-secondary text-[14px] border-[1.2px] p-3 m-4 px-8 border-dashed rounded-full border-secondary">
           View Our Locations
         </span>
       </div>
-      <h1 className="text-white font-[700] text-4xl md:text-7xl max-w-[800px] text-center leading-tight my-6">
+      <div className="flex justify-center flex-col items-center px-6">
+      <h1 className="text-white font-[700] text-4xl md:text-7xl text-center leading-tight my-6">
         Your Dream Website, Made Reality
       </h1>
-      <h2 className="text-[#979595] text-center w-[920px] font-[300] text-[20px] mb-10">
+      <h2 className="text-[#979595] text-center font-[300] text-[20px] mb-10">
         We provide bespoke solutions that bridge the gap between commercial
         possibilities and creative resolution, while delivering effectiveness
         for our clients.
       </h2>
+      </div>
       <div className="my-10 max-w-[1200px]">
         <img
           alt="locations"

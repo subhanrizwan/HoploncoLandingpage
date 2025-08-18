@@ -1,10 +1,12 @@
 // import React from 'react';
 import Aged from '../assets/images/industry/Aged.png';
+import ThirdAnimatedButton from './AnimatedBtn3';
+import SecondAnimatedButton from './AnimatedBtn2';
 import IndustryScroller from './ScrollerIndustry';
 function IndustriesOriginal() {
   return (
-    <section className="bg-transparent flex flex-col justify-center px-6 mt-24 max-w-7xl mx-auto">
-      <div className="my-5 flex flex-col md:flex-row max-w-[1400px]">
+    <section className="bg-transparent flex flex-col justify-center px-6 mt-0 max-w-7xl mx-auto overflow-hidden">
+      <div className="my-5 flex flex-col md:flex-col  max-w-[1400px]">
         <div>
           <div className="my-4">
             <span className="bg-secondary text-black text-[14px] border-1 p-3 px-8 border-dashed rounded-full border-primary">
@@ -36,18 +38,8 @@ function IndustriesOriginal() {
         <IndustryScroller />
       </div>
       <div className="hidden md:flex space-x-2 text-black font-medium my-10 mx-auto">
-        <a
-          className="text-white border border-primary bg-black px-4 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
-          href="/contact/"
-        >
-          Talk To Our Expert
-        </a>
-        <a
-          className="text-black border border-primary bg-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
-          href="#"
-        >
-          Get a Quote
-        </a>
+       <ThirdAnimatedButton />
+       <SecondAnimatedButton />
       </div>
     </section>
   );
