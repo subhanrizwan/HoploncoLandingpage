@@ -1,37 +1,10 @@
 import Phone from "../assets/images/fiedicons/phone.png";
 import WP from "../assets/images/fiedicons/wp1.png";
 import Headphone from "../assets/images/fiedicons/heaphone.png";
-// import { MdSupportAgent } from "react-icons/md";
 function FixedSection() {
   return (
     <>
       <div className="fixed z-[9999] right-0 md:right-0 top-[26vh] flex flex-col items-end gap-0">
-        {/* <a
-    href="https://wa.me/971505452643"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat on WhatsApp"
-    className="relative w-[56px] h-[56px] rounded-tl-[18px] overflow-hidden ring-1 ring-white/40"
-  >
-    <img
-      alt="whatsapp"
-      loading="lazy"
-      decoding="async"
-      data-nimg="fill"
-      style={{
-        position: "absolute",
-        height: "120px",
-        width: "100%",
-        left: 0,
-        top: 0,
-        right: 0,
-        bottom: 0,
-        objectFit: "cover",
-        color: "transparent"
-      }}
-      src={WP}
-    />
-  </a> */}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -82,9 +55,8 @@ function FixedSection() {
           <span
             style={{
               transform: "rotate(-90deg)", // vertical banane ke liye
-              // transformOrigin: "center", // rotation ka pivot beech me
             }}
-            class="rotate-270  font-bold text-[20.4px] tracking-[0.06em] text-black whitespace-nowrap relative bottom-4 left-0"
+            className="rotate-270  font-bold text-[20.4px] tracking-[0.06em] text-black whitespace-nowrap relative bottom-4 left-0"
           >
             Call Back
           </span>

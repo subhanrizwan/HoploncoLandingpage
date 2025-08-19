@@ -1,11 +1,12 @@
 import React from "react";
 import { Share, Palette, PhoneAndroid, TrendingUp } from "@mui/icons-material";
-import FirstAnimatedButton from './AnimatedBtn1';
-import SecondAnimatedButton from './AnimatedBtn2'
+import FirstAnimatedButton from "./AnimatedBtn1";
+import SecondAnimatedButton from "./AnimatedBtn2";
+import FocusOnSelect from "./Slider";
 function SocialMediaMarketOriginal() {
   return (
     <>
-      <div className="relative mt-0">
+      <div className="relative mt-0 ">
         <div className="relative z-10">
           <svg
             width="100%"
@@ -36,7 +37,7 @@ function SocialMediaMarketOriginal() {
             <h2 className="text-[#979595] text-center max-w-[800px] font-[300] text-[20px]">
               We deliver effective, efficient &amp; innovative digital services.
             </h2>
-            <div className="my-5">
+            <div className="my-5 hidden sm:block">
               <div className="flex gap-2 flex-wrap justify-center text-black">
                 {/* UX/UI Design */}
                 <div
@@ -508,9 +509,13 @@ function SocialMediaMarketOriginal() {
                 </div>
               </div>
             </div>
+          {/*  */}
+          {" "}
+  <FocusOnSelect className="!block sm:!hidden" />
+          {" "}
             <div className="hidden md:flex space-x-2 text-black font-medium my-10">
-             <FirstAnimatedButton />
-             <SecondAnimatedButton />
+              <FirstAnimatedButton />
+              <SecondAnimatedButton />
             </div>
           </section>
         </div>

@@ -1,56 +1,55 @@
 import { Button } from "@mui/material";
-import Union from '../assets/images/SpiderWeb/Union.png'
-import ThirdAnimatedButton from './AnimatedBtn3';
-import SecondAnimatedButton from './AnimatedBtn2';
+import Union from "../assets/images/SpiderWeb/Union.png";
+import ThirdAnimatedButton from "./AnimatedBtn3";
+import SecondAnimatedButton from "./AnimatedBtn2";
 export default function PartnerShip() {
   return (
     <>
-    <div
-  className=""
-  style={{
-    position: "relative",
-    overflow: "hidden",
-  }}
->
-  <svg
-    width="100%"
-    style={{ height: "clamp(80px, 1vw, 120px)" }}
-    className="block "
-    viewBox="0 0 1920 120"
-    xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="none"
-    aria-hidden="true"
-  >
-    <defs>
-      <linearGradient id="_S_2_" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stopColor="#D8FF36" />
-        <stop offset="100%" stopColor="#D8FF36" />
-      </linearGradient>
-    </defs>
-    <ellipse cx={960} cy={120} rx={1000} ry={120} fill="url(#_S_2_)" />
-  </svg>
-  {/*  */}
-  <div style={{ position: "relative", zIndex: 1 }}>
-    <section
-
-    className="bg-[#D8FF36] pb-10 flex flex-col items-center justify-center px-6">
-      <div className="my-4">
-        <span className="bg-white text-[#989898] md:text-[14px] text-[11px] border-1 p-3 m-4 md:px-4 px-2 border-dashed rounded-full border-primary">
-          Trusted by Industry &amp; Leaders Worldwide
-        </span>
-      </div>
-      <h1 className="text-black font-[700] text-4xl md:text-7xl max-w-[1100px] text-center leading-tight my-6">
-        Grateful for the Partnership <br />
-        with Our Esteemed Client
-      </h1>
-      <h2 className="text-[#3F3F3F] text-center max-w-[1100px] font-[300] text-[20px] mb-10">
-        Enum Digital ( Digits that Define Growth ) - No matter we are building a
-        website for our clients or boosting their business through our marketing
-        strategies - We talk about facts like the&nbsp;website's health score,
-        optimization score(website speed),&nbsp;no. of clicks, no. of leads,
-        cost per lead, and more...
-      </h2>
-    {/* Main Content Grid */}
+      <div
+        className=""
+        style={{
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <svg
+          width="100%"
+          style={{ height: "clamp(80px, 1vw, 120px)" }}
+          className="block "
+          viewBox="0 0 1920 120"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="_S_2_" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#D8FF36" />
+              <stop offset="100%" stopColor="#D8FF36" />
+            </linearGradient>
+          </defs>
+          <ellipse cx={960} cy={120} rx={1000} ry={120} fill="url(#_S_2_)" />
+        </svg>
+        {/*  */}
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <section className="bg-[#D8FF36] pb-10 flex flex-col items-center justify-center px-6">
+            <div className="my-4">
+              <span className="bg-white text-[#989898] md:text-[14px] text-[11px] border-1 p-3 m-4 md:px-4 px-2 border-dashed rounded-full border-primary">
+                Trusted by Industry &amp; Leaders Worldwide
+              </span>
+            </div>
+            <h1 className="text-black font-[700] text-4xl md:text-7xl max-w-[1100px] text-center leading-tight my-6">
+              Grateful for the Partnership <br />
+              with Our Esteemed Client
+            </h1>
+            <h2 className="text-[#3F3F3F] text-center max-w-[1100px] font-[300] text-[20px] mb-10">
+              Enum Digital ( Digits that Define Growth ) - No matter we are
+              building a website for our clients or boosting their business
+              through our marketing strategies - We talk about facts like
+              the&nbsp;website's health score, optimization score(website
+              speed),&nbsp;no. of clicks, no. of leads, cost per lead, and
+              more...
+            </h2>
+            {/* Main Content Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
               {/* Left Side - Statue with Social Icons */}
               <div className="relative flex justify-center lg:justify-end order-2 lg:order-1">
@@ -153,7 +152,6 @@ export default function PartnerShip() {
                     key={index}
                     className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-black rounded-full flex flex-col items-center justify-center text-center"
                   >
-                  
                     <div className="text-lime-400 font-bold text-lg sm:text-xl lg:text-2xl leading-none">
                       {badge.title}
                     </div>
@@ -168,15 +166,13 @@ export default function PartnerShip() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:space-x-4 w-full sm:w-auto">
-              <ThirdAnimatedButton />
-              <SecondAnimatedButton />
+                <ThirdAnimatedButton />
+                <SecondAnimatedButton />
               </div>
             </div>
-      
-    </section>
-  </div>
-</div>
-
+          </section>
+        </div>
+      </div>
     </>
   );
 }
